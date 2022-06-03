@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="Food_Ordering_System.Index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link href="CSS/style2.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <section id="header">
+        <i class="fas fa-utensils-alt fa-2x"><span style="color: red;">Food</span>ies..</i>
+        <div>
+            <ul id="navbar">
+                <li><a href="HomeForm1.aspx">Home</a></li>
+                <li><a href="FoodForm1.aspx">Food</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul id="end">
+                <li><a href="RestaurantRegistrationForm1.aspx">Add Your Business </a></li>
+                <li><a href="LoginForm1.aspx">LogIn </a></li>
+                <li><a href="RegistrationForm1.aspx">Register</a></li>
+                <li><a href="cart.html"><i class="fad fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+        <!--main content placeholder-->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!--end main content placeholder-->
+
+        
+        <div class="copyright">
+            <p>Copyright &copy;Foodies.com</p>
+        </div>
+
+</body>
+</html>
